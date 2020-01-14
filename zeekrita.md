@@ -24,7 +24,7 @@ client:~# docker-compose run rita show-beacons elfu -H | head -100
 ```
 
 It produced the following:
-[Rita data](images/hhc-rita.jpeg)
+![Rita data](images/hhc-rita.jpeg)
 
 This IP, according to Rita, is almost 100% certain to be a beacon based on the
 amount of connections, the interval disparity, and how many connections within
