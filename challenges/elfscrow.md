@@ -10,7 +10,7 @@ First of all, I looked for the function generate_key(), which was aptly
 named. Stepping through the code and I can find a few things to search
 on, specifically this section here:
 
-![super-secure-random-number-gen](images/hhc-supersecurerandom.jpg)
+![super-secure-random-number-gen](../images/hhc-supersecurerandom.jpg)
 
 This is the function that generates a "random" number. We have some
 constants! I ran a google search on 2531011 and discovered that this is
@@ -18,13 +18,13 @@ simply the rand() function on a Windows platform!
 	
 Rosetta code gave me the python equivalent, which I kept for later use:
 
-![psuedo-random number generator for python from rosetta code](images/hhc-random.jpg)
+![psuedo-random number generator for python from rosetta code](../images/hhc-random.jpg)
 
 I noticed that it runs this function 8 times in sequence, as evidenced
 from this loop (notice the bottom box adding 1 to EAX, then the top box
 comparing EBP+i to the number 8).
 
-![Gen-key loop](images/hhc-genkeyloop.jpg)
+![Gen-key loop](../images/hhc-genkeyloop.jpg)
 
 This is actually very telling! The key is 8 bytes long! That means that
 the encryption algorithm is most likely DES! DES typically has an 8 byte
@@ -64,7 +64,7 @@ Some playing with the function and I eventually come up with the following
 function to generate a valid key based on the epoch time. This will
 generate a valid key every time!
 
-![Generate Valid Key](images/hhc-validkey.jpg)
+![Generate Valid Key](../images/hhc-validkey.jpg)
 
 I don't know why I used the variable "tick." Okay, so let's go over what we
 know so far! I know the date and time the file was supposedly generated from

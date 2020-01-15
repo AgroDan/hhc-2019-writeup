@@ -107,4 +107,4 @@ Using the following splunk query:
 I was able to determine the path of the extracted archive. In core.xml I was able to
 find the offending statement to Kent.
 
-![Splunk Output](images/hhc-splunk.jpeg)
+![Splunk Output](../images/hhc-splunk.jpeg)

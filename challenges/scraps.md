@@ -74,6 +74,6 @@ This allowed me to dump the entire database! I only needed krampus's table, so i
 that was a link to several JPG's. Each jpg was a torn piece of paper. Taking the
 pieces of paper and arranging them formed:
 
-![Torn Note](images/hhc-torn-note.jpg)
+![Torn Note](../images/hhc-torn-note.jpg)
 
 Nice! Weird icon though...is that a tooth?
