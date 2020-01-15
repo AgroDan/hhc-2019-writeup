@@ -26,3 +26,8 @@ Put a picture of your character here
 13. [Access to Minty's Dorm Room](dormroom.md)
 14. [Who Took the Turtle Doves?](turtle.md)
 15. [Capteha Bypass with Machine Learning](capteha.md)
+16. [Retrieve Scraps of Paper from Server](scraps.md)
+17. [Decrypting ElfScrow](elfscrow.md)
+18. [Opening "The Crate"](thecrate.md)
+19. [Analysis with JQ](jq.md)
+20. [SRF Admin Portal](srf.md)
