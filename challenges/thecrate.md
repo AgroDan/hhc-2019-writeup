@@ -67,7 +67,7 @@ That oughta do it.
 
 Bingo!
 
-## Lock 7: "The font you're seeing is pretty slock, but this lock's code was my first pick."
+## Lock 7: "The font you're seeing is pretty slick, but this lock's code was my first pick."
 
 This is straightforward. Generally if a browser is presented with multiple fonts,
 it will choose the first one and attempt to load it. If it fails, it moves down the
