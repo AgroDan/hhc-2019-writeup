@@ -6,33 +6,33 @@ ever done for one. Please bear with me.
 # Story
 Describe the story here.
 
-# Me
-Put a picture of your character here
+# Starring: Me
+![This is me, Dan](images/hhc-avatar.png)
 
 # Terminal Challenges
 
-- [Nyanshell](nyancat.md)
-- [Powershell Challenge](powershell.md)
-- [Linux Path Challenge](linuxpath.md)
-- [Challenge with MongoDB](mongodb.md)
+- [Nyanshell](terminal/nyancat.md)
+- [Powershell Challenge](terminal/powershell.md)
+- [Linux Path Challenge](terminal/linuxpath.md)
+- [Challenge with MongoDB](terminal/mongodb.md)
+- [Door code](terminal/doorcode.md)
+- [Graylog](terminal/graylog.md)
+- [Web Apps: A TrailHead -- Holiday Hack Trail](terminal/trailhead.md)
 
 # Challenges
 
-1. [Find the Turtledoves](turtledoves.md)
-4. [Objective 3) Windows Log Analysis: Evaluate Attack outcome](obj3.md)
-5. [Door code](doorcode.md)
-7. [Graylog](graylog.md)
-8. [Web Apps: A TrailHead -- Holiday Hack Trail](trailhead.md)
-9. [Unredact Threatening Document](unredact.md)
-10. [Windows Log Analysis: Evaluate Attack Outcome](wlaeval.md)
-11. [Windows Log Analysis: Determine Attacker Technique](wladetermine.md)
-12. [Network Log Analysis: From Zeek to RITA](zeekrita.md)
-13. [Splunk](splunk.md)
-14. [Access to Minty's Dorm Room](dormroom.md)
-15. [Who Took the Turtle Doves?](turtle.md)
-16. [Capteha Bypass with Machine Learning](capteha.md)
-17. [Retrieve Scraps of Paper from Server](scraps.md)
-18. [Decrypting ElfScrow](elfscrow.md)
-19. [Opening "The Crate"](thecrate.md)
-20. [Analysis with JQ](jq.md)
-21. [SRF Admin Portal](srf.md)
+- [Find the Turtledoves](challenges/turtledoves.md)
+- [Windows Log Analysis: Evaluate Attack outcome](challenges/obj3.md)
+- [Unredact Threatening Document](challenges/unredact.md)
+- [Windows Log Analysis: Evaluate Attack Outcome](challenges/wlaeval.md)
+- [Windows Log Analysis: Determine Attacker Technique](challenges/wladetermine.md)
+- [Network Log Analysis: From Zeek to RITA](challenges/zeekrita.md)
+- [Splunk](challenges/splunk.md)
+- [Access to Minty's Dorm Room](challenges/dormroom.md)
+- [Who Took the Turtle Doves?](challenges/turtle.md)
+- [Capteha Bypass with Machine Learning](challenges/capteha.md)
+- [Retrieve Scraps of Paper from Server](challenges/scraps.md)
+- [Decrypting ElfScrow](challenges/elfscrow.md)
+- [Opening "The Crate"](challenges/thecrate.md)
+- [Analysis with JQ](challenges/jq.md)
+- [SRF Admin Portal](challenges/srf.md)
