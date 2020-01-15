@@ -77,4 +77,6 @@ file is valid or not. I'll simply use the linux command "file" to run a
 bytewise check on the data and determine if it's a PDF doc.
 		
 I wrote a script which did just that. It's hacky, it's crazy, but best of all
-it WORKED! Source code for the solution is availble on my github.
+it WORKED!
+
+Source code available [here](decr.py).

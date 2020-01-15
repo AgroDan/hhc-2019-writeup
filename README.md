@@ -21,6 +21,7 @@ test my mettle with various Red Team/Blue Team tactics. Thanks as always to
 - [Door code](terminal/doorcode.md)
 - [Graylog](terminal/graylog.md)
 - [Web Apps: A TrailHead -- Holiday Hack Trail](terminal/trailhead.md)
+- [Analysis with JQ](terminal/jq.md)
 
 # Challenges
 
@@ -37,5 +38,4 @@ test my mettle with various Red Team/Blue Team tactics. Thanks as always to
 - [Retrieve Scraps of Paper from Server](challenges/scraps.md)
 - [Decrypting ElfScrow](challenges/elfscrow.md)
 - [Opening "The Crate"](challenges/thecrate.md)
-- [Analysis with JQ](challenges/jq.md)
 - [SRF Admin Portal](challenges/srf.md)

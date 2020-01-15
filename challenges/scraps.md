@@ -67,8 +67,8 @@ that end, the user must trust that the tamper script will do the proper URL enco
 and as you can see I do.
 	
 To run this, the command was:
-	
-	`client~# sqlmap -u 'https://studentportal.elfu.org/check-application.php?elfmail=a' --no-urlencode --tamper elf_tamper.py --dump`
+
+`sqlmap -u 'https://studentportal.elfu.org/check-application.php?elfmail=a' --no-urlencode --tamper elf_tamper.py --dump`
 	
 This allowed me to dump the entire database! I only needed krampus's table, so inside
 that was a link to several JPG's. Each jpg was a torn piece of paper. Taking the
