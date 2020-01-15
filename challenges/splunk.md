@@ -4,12 +4,12 @@ This is an incident response exercise. Professor Banas was hacked and the
 attackers left a message mocking him. The challenge is to find the message
 that the attackers wrote. 
 
-##Question 1 
+## Question 1 
 
 The first answer is "sweetums," as that is the computer that Professor Banas
 uses, which was determined from reading the #ELFU SOC chat.  
 
-##Question 2 
+## Question 2 
 
 The next question was asking for the fully qualified location of the file
 that was accessed, in this case: `C:\Users\cbanas\Documents\Naughty_and_Nice_2019_draft.txt`
@@ -18,7 +18,7 @@ This was determined by searching for "sweetums santa" considering the chat
 asked me to look for correlations between the hostname and the conversations
 with "the big guy."  
 
-##Question 3 
+## Question 3 
 
 This question asked for the FQDN of the C2 server controlling sweetums. With
 the search string of: `sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=3 powershell`
@@ -26,7 +26,7 @@ the search string of: `sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Opera
 I was able to determine by looking at the "Interesting Fields" specifically
 under the "Destination Hostname" field. 
 
-##Question 4 
+## Question 4 
 
 This question requests the document that launched the malicious powershell code.
 In order to find this, we must first determine the period of time the activities
@@ -62,7 +62,7 @@ query:
 The query returns two results, one being the powershell script in question, and the
 other being the WinWord.exe process opening the malicious file: `C:\Windows\Temp\Temp1_Buttercups_HOL404_assignment (002).zip\19th Century Holiday Cheer Assignment.docm`
 
-##Question 5 
+## Question 5 
 
 To obtain the amount of emails sent, some Splunk-Fu needed to be invoked. Using
 the data pulled from StoQ, I crafted the following query: 
@@ -71,7 +71,7 @@ the data pulled from StoQ, I crafted the following query:
 
 And the result was 21. 
 
-###BONUS: 
+### BONUS: 
 
 Noticed a message from a supposed "student" named "Bradly Buttercups" sending
 Professor Banas a word document that was zipped with a password of 123456789 and
@@ -79,12 +79,12 @@ instructing the professor to enable editing and enabling content. This is extrem
 suspicious as I suspect Bradley Buttercups sending the professor a payload attached
 as a word macro. 
 
-##Question 6 
+## Question 6 
 
 The password was gained from the email I mentioned in the previous question around
 the bonus. This password was 123456789. 
 
-##Question 7 
+## Question 7 
 
 This was also gleaned from the previous question. A keen eye however noticed the
 usage of the misspelled email address that the attacker typo-squatted (or whatever
@@ -94,7 +94,7 @@ the word is). The email is:
 
 That's I as in AEIOU, not L. Not easy to detect immediately. 
 
-##Challenge Question 
+## Challenge Question 
 
 The answer to the challenge question is: 
 
