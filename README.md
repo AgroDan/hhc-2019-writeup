@@ -4,7 +4,10 @@ Hello. This is my second Holiday Hack Challenge, but the first writeup I've
 ever done for one. Please bear with me.
 
 # Story
-Describe the story here.
+Elf University has been hacked! Follow me as I do my best to write up the
+incident, report on how I was able to accomplish everything, and ultimately
+test my mettle with various Red Team/Blue Team tactics. Thanks as always to
+@Edskoudis for an awesome Holiday Hack Challenge!
 
 # Starring: Me
 ![This is me, Dan](images/hhc-avatar.png)
