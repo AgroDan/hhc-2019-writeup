@@ -1,6 +1,6 @@
 # Graylog
 
-##Question 1:
+## Question 1:
 
 **C:\Users\minty\Downloads\cookie_recipe.exe**
 
@@ -11,7 +11,7 @@ and not junk .temp files. We can use regular expressions to include or exclude p
 
 `TargetFilename:/.+\.pdf/`
 
-##Question 2:
+## Question 2:
 
 **192.168.247.175:4444**
 
@@ -20,7 +20,7 @@ and not junk .temp files. We can use regular expressions to include or exclude p
 We can pivot off the answer to our first question using the binary path as our ProcessImage.
 
 
-##Question 3:
+## Question 3:
 
 **whoami**
 
@@ -30,7 +30,7 @@ Since all commands (sysmon event id 1) by the attacker are initially running thr
 cookie_recipe.exe binary, we can set its full-path as our ParentProcessImage to find child
 processes it creates sorting on timestamp.
 
-##Question 4:
+## Question 4:
 
 **webexservice**
 
@@ -39,7 +39,7 @@ processes it creates sorting on timestamp.
 Continuing on using the cookie_recipe.exe binary as our ParentProcessImage, we should see
 some more commands later on related to a service.
 
-##Question 5:
+## Question 5:
 
 **C:\cookie.exe**
 
@@ -48,7 +48,7 @@ some more commands later on related to a service.
 The attacker elevates privileges using the vulnerable webexservice to run a file called
 cookie_recipe2.exe. Let's use this binary path in our ParentProcessImage search.
 
-##Question 6:
+## Question 6:
 
 **Alabaster**
 
@@ -57,7 +57,7 @@ cookie_recipe2.exe. Let's use this binary path in our ParentProcessImage search.
 Windows Event Id 4624 is generated when a user network logon occurs successfully. We can
 also filter on the attacker's IP using SourceNetworkAddress.
 
-##Question 7:
+## Question 7:
 
 **06:04:28**
 
@@ -65,7 +65,7 @@ also filter on the attacker's IP using SourceNetworkAddress.
 
 LogonType 10 is used for successful network connections using the RDP client.
 
-##Question 8:
+## Question 8:
 
 *Answer: elfu-res-wks2,elfu-res-wks3,3*
 
@@ -76,7 +76,7 @@ the successful network authentication for this with event id 4624 and logon type
 
 **So: EventID:4624 AND source:elfu-res-wks3**
 
-##Question 9:
+## Question 9:
 
 **C:\Users\alabaster\Desktop\super_secret_elfu_research.pdf**
 
@@ -87,7 +87,7 @@ also use regex to filter out overly common file paths using something like:
 
 *EventID:3 AND DestinationPort:3389*
 
-##Question 10:
+## Question 10:
 
 **104.22.3.84**
 
